@@ -1,6 +1,6 @@
 <?php
 
-$sandbox = false;
+$sandbox = true;
 
 if ($sandbox) {
 	$host = getenv("DB_HOST");
