@@ -63,7 +63,7 @@ function redirectionTo($path)
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script data-ad-client="ca-pub-5075442842176820" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <link rel="shortcut icon" href="./img/favicon.png" />
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="./utils/main.css" />
 
     <!-- Meta SEO -->
@@ -146,7 +146,7 @@ function redirectionTo($path)
     ?>
 
     <div class="mt-4 text-center p-3">
-        <img class="d-block mx-auto mb-4" src="./img/logo.png" alt="" width="90" height="90">
+        <img class="d-block mx-auto mb-4" src="./assets/img/logo.png" alt="" width="90" height="90">
         <h1 class="display-5 fw-bold"><?= $text['title'] ?></h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4"><?= $text['description1'] ?> <b><br><?= $text['description2'] ?> <?php echo number_format(getTable()->value_paid, 0, ',', '.');  ?> <?= $text['description3'] ?></b><br> <br><?= $text['warning1'] ?> <?= "<b>" . getMinimumWithdraw(getFee(false), true) ?> <?= $text['warning2'] ?> <?= "<b>" . getFee(true) ?> <?= $text['warning3'] ?> </p>
