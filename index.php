@@ -21,6 +21,7 @@ if (isset($_REQUEST['w'])) {
     $user_exchange = verify_exchange($wallet);
 } else {
     $wallet = "";
+    $user_exchange = "NOPE";
 }
 
 $myWallet = getenv("MY_WALLET");
@@ -123,6 +124,21 @@ function redirectionTo($path){
     ?>
 
     <div class="mt-4 text-center p-3">
+
+        <!-- Ads Top -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- reaufree - top -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2813872177028764"
+             data-ad-slot="3876679338"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!-- End Ads Top -->
+
         <img class="d-block mx-auto mb-4" src="./assets/img/logo.png" alt="" width="90" height="90">
         <h1 class="display-5 fw-bold"><?= $text['title'] ?></h1>
         <div class="col-lg-6 mx-auto">
@@ -149,6 +165,20 @@ function redirectionTo($path){
                         </span>
                     </div>
                 </div>
+
+                <!-- Ads Middle -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- reaufree - middle -->
+                <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-2813872177028764"
+                   data-ad-slot="3685107645"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+                <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- End Ads Middle -->
 
                 <div id="captcha" class="g-recaptcha d-grid gap-2 d-sm-flex justify-content-sm-center mb-4" data-sitekey="6LcB3ZkaAAAAAN3r2rMwrLSDQMhKqZl9FHhPhv5Q"></div>
 
@@ -282,6 +312,20 @@ function redirectionTo($path){
             }
 
             ?>
+
+            <!-- Ads Faq -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- reaufree - faq -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2813872177028764"
+                 data-ad-slot="8494387679"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <!-- End Ads Faq -->
 
 
             <?php
