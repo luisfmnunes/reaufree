@@ -125,10 +125,16 @@ $text['quadrillion'] = "Quatrilhão";
 $text['quadrillions'] = "Quatrilhões";
 
 //Acronym of marks
-$text['acronym_million'] = "million";
+$text['acronym_million'] = "mi";
 $text['acronym_billion'] = "bi";
 $text['acronym_trillion'] = "tri";
 $text['acronym_quadrillion'] = "quatr";
+
+//Footer
+$text['footer'] = "Este é um site sem vínculo com o Projeto Oficial do \$REAU - VIRA-LATA FINANCE!";
+$text['official_site'] = "Site Oficial";
+$text['github'] = "Github";
+$text['blog'] = "Blog";
 
 //Alert Message
 $text['success_withdraw'] = "Your \$REAUS were successfully deposited!";

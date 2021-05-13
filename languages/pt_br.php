@@ -131,6 +131,12 @@ $text['acronym_billion'] = "bi";
 $text['acronym_trillion'] = "tri";
 $text['acronym_quadrillion'] = "quatr";
 
+//Footer
+$text['footer'] = "Este é um site sem vínculo com o Projeto Oficial do \$REAU - VIRA-LATA FINANCE!";
+$text['official_site'] = "Site Oficial";
+$text['github'] = "Github";
+$text['blog'] = "Blog";
+
 //Alert Message
 $text['success_withdraw'] = "Seus \$REAUS foram depositados com sucesso!";
 $text['you_got_screwed'] = "Se ferroooUUUUUUUUUUUUUUUU!";
