@@ -38,8 +38,7 @@ function getTable(){
                         }
 }
 
-function getSaldo($formated)
-{
+function getSaldo($formated){
     try {
         $curl = curl_init();
 
@@ -74,9 +73,9 @@ function getSaldo($formated)
     }
 }
 
-function paidValueToUser($balance_user, $wallet)
-{
+function paidValueToUser($balance_user, $wallet){
     include 'conexao/conexao.php';
+    $sandbox = false;
     if ($sandbox) {
         return true;
     } else {
@@ -117,9 +116,10 @@ function paidValueToUser($balance_user, $wallet)
     }
 }
 
-function getFee($formated){
-
-
+function getFee($formated, $exchange = "NOPE"){
+  if($exchange == "BRBTC"){
+    return 0;
+  }else{
     try {
         $curl = curl_init();
 
@@ -151,6 +151,7 @@ function getFee($formated){
     } catch (\Throwable $th) {
         return 0;
     }
+  }
 }
 
 function getMinimumWithdraw($fee, $formated)

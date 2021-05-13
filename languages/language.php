@@ -21,7 +21,19 @@ function getLanguages(){
               return 'languages/pt_br.php';
               break;
       }
+    }else{
+      $lang = 'pt-br';
+      return 'languages/pt_br.php';
     }
   }
+
+  function getLangAbbreviation(){
+
+    if (isset($_GET['lang'])) {
+        return $_GET['lang'];
+      }else{
+        return 'pt-br';
+      }
+    }
 
 ?>

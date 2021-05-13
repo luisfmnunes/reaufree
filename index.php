@@ -1,5 +1,4 @@
 <?php
-//include "utils/recaptchalib.php";
 
 include "api/api.php";
 require_once __DIR__ . '/vendor/autoload.php';
@@ -12,12 +11,14 @@ $repository = Dotenv\Repository\RepositoryBuilder::createWithNoAdapters()
 $dotenv = Dotenv\Dotenv::create($repository, __DIR__);
 $dotenv->load();
 
+include './utils/verify_exchange.php';
 include_once "./languages/language.php";
-
 include getLanguages();
+$lang = getLangAbbreviation();
 
 if (isset($_REQUEST['w'])) {
     $wallet = $_REQUEST['w'];
+    $user_exchange = verify_exchange($wallet);
 } else {
     $wallet = "";
 }
@@ -25,8 +26,7 @@ if (isset($_REQUEST['w'])) {
 $myWallet = getenv("MY_WALLET");
 //$sandbox = true;
 
-function redirectionTo($path)
-{
+function redirectionTo($path){
     echo "<script> window.location.href = '$path'; </script>";
 }
 
@@ -126,7 +126,7 @@ function redirectionTo($path)
         <img class="d-block mx-auto mb-4" src="./assets/img/logo.png" alt="" width="90" height="90">
         <h1 class="display-5 fw-bold"><?= $text['title'] ?></h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4"><?= $text['description1'] ?> <b><br><?= $text['description2'] ?> <?php echo number_format(getTable()->value_paid, 0, ',', '.');  ?> <?= $text['description3'] ?></b><br> <br><?= $text['warning1'] ?> <?= "<b>" . getMinimumWithdraw(getFee(false), true) ?> <?= $text['warning2'] ?> <?= "<b>" . getFee(true) ?> <?= $text['warning3'] ?> </p>
+            <p class="lead mb-4"><?= $text['description1'] ?> <b><br><?= $text['description2'] ?> <?php echo number_format(getTable()->value_paid, 0, ',', '.');  ?> <?= $text['description3'] ?></b><br> <br><?= $text['warning1'] ?> <?= "<b>" . getMinimumWithdraw(getFee(false, $user_exchange), true) ?> <?= $text['warning2'] ?> <?= "<b>" . getFee(true, $user_exchange) ?> <?= $text['warning3'] ?> </p>
             <small class="text-muted"><?= $text['warning4'] ?></small>
             <form method="POST" autocomplete="on">
                 <div class="input-group mb-3 mt-3">
@@ -155,7 +155,7 @@ function redirectionTo($path)
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <button id="receber" type="submit" name="receber" class="btn btn-primary btn-lg px-4"><?= $text['receive_my_reau'] ?></button>
                     <button type="button" class="btn btn-warning btn-lg px-4"><?= $text['my_balance'] . "" . getSaldoUser($wallet, true) ?></button>
-                    <button id="sacar" type="submit" <?php if (getSaldoUser($wallet, false) >= (getFee(false) + 1000000)) {
+                    <button id="sacar" type="submit" <?php if (getSaldoUser($wallet, false) >= (getFee(false, $user_exchange) + 1000000)) {
                                                             echo "";
                                                         } else {
                                                             echo "hidden";
@@ -163,15 +163,15 @@ function redirectionTo($path)
                 </div>
 
 
-                <div class="text-align" <?php if (getSaldoUser($wallet, false) >= (getFee(false) + 1000000)) {
+                <div class="text-align" <?php if (getSaldoUser($wallet, false) >= (getFee(false, $user_exchange) + 1000000)) {
                                             echo "";
                                         } else {
                                             echo "hidden";
                                         } ?>>
                     <br>
                     <div class="alert alert-success d-flex justify-content-center" role="alert">
-                        <?= $text['balance_available']; ?> <?php if (getSaldoUser($wallet, false) >= (getFee(false) + 1000000)) {
-                                                                echo number_format(doubleval(getSaldoUser($wallet, false)) - doubleval(getFee(false)), 0, ',', '.');
+                        <?= $text['balance_available']; ?> <?php if (getSaldoUser($wallet, false) >= (getFee(false, $user_exchange) + 1000000)) {
+                                                                echo number_format(doubleval(getSaldoUser($wallet, false)) - doubleval(getFee(false, $user_exchange)), 0, ',', '.');
                                                             }  ?>
                     </div>
                 </div>
@@ -254,15 +254,15 @@ function redirectionTo($path)
                     }
 
 
-                    $balance_user_formated = doubleval(getSaldoUser($wallet, true)) - doubleval(getFee(true));
+                    $balance_user_formated = doubleval(getSaldoUser($wallet, true)) - doubleval(getFee(true, $user_exchange));
 
                     //O usuário deseja sacar o valor - DÉBITO
                     if (isset($_POST['sacar'])) {
                         //Caso o tempo já tenha acabado, vai ser adicionado um novo valor no saldo.
                         if (paidValueToUser($balance_user_formated, $wallet)) {
                             //Insere no log
-                            $getFee = getFee(false);
-                            $paid_value = doubleval(getSaldoUser($wallet, false)) - doubleval(getFee(false));
+                            $getFee = getFee(false, $user_exchange);
+                            $paid_value = doubleval(getSaldoUser($wallet, false)) - doubleval(getFee(false, $user_exchange));
 
                             $sql = "INSERT INTO logs(wallet, my_wallet, transfered_value, type_transaction, fee) VALUES('$wallet','$myWallet', $paid_value,'D', $getFee)";
                             $inserir = mysqli_query($conexao, $sql);
