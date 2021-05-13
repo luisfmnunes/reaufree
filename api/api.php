@@ -3,12 +3,13 @@
 
 function getTable(){
 
-  require 'languages/en.php';
+    include_once "./languages/language.php";
+
+    include getLanguages();
 
     //100 milhões em saldo
     if (getSaldoDisponivel(true) >= '100.000.000') {
-        return json_decode('
-        {"value_paid": 31000, "unidade": "mi"}'); //mi
+      return json_decode('{"value_paid": 31000, "unidade": "'.$text['acronym_million'].'"}'); //mi
     } else
 
         //1 bilhão em Saldo
@@ -16,10 +17,10 @@ function getTable(){
             return json_decode('{"value_paid": 62000, "unidade": "bi"}');
         } else
 
-            //10 bilhões em Saldo
-            if (getSaldoDisponivel(true) >= '10.000.000.000') {
-                return json_decode('{"value_paid": 125000, "unidade": "bi"}');
-            } else
+        //10 bilhões em Saldo
+        if (getSaldoDisponivel(true) >= '10.000.000.000') {
+            return json_decode('{"value_paid": 125000, "unidade": "bi"}');
+        } else
 
                 //100 bilhões em Saldo
                 if (getSaldoDisponivel(true) >= '100.000.000.000') {

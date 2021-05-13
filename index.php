@@ -12,32 +12,9 @@ $repository = Dotenv\Repository\RepositoryBuilder::createWithNoAdapters()
 $dotenv = Dotenv\Dotenv::create($repository, __DIR__);
 $dotenv->load();
 
+include_once "./languages/language.php";
 
-if (isset($_GET['lang'])) {
-    $lang = $_GET['lang'];
-
-    switch ($lang) {
-        case 'en':
-            include_once 'languages/en.php';
-            break; //Inglês
-        case 'pt-br':
-            include_once 'languages/pt_br.php';
-            break; //Português Brasil
-        case 'es':
-            include_once 'languages/es.php';
-            break; //Espanhol
-        case 'cn':
-            include_once 'language/cn.php';
-            break; //Chinês
-        default:
-            include_once 'languages/pt_br.php';
-            $lang = "pt-br";
-            break;
-    }
-} else {
-    $lang = "pt-br";
-    include_once 'languages/pt_br.php';
-}
+include getLanguages();
 
 if (isset($_REQUEST['w'])) {
     $wallet = $_REQUEST['w'];

@@ -1,17 +1,9 @@
 <?php
 
 //identify language of user
-if(isset($_GET['lang'])){
-  $lang = $_GET['lang'];
+include_once "./languages/language.php";
 
-  if($lang == 'en'){
-      include 'languages/en.php';
-  }
-
-}else{
-  //Idioma principal
-  include 'languages/pt_br.php';
-}
+include getLanguages();
 
 ?>
 

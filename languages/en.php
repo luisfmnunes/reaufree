@@ -106,7 +106,7 @@ O endereço funciona exatamente como no sistema financeiro tradicional, para rec
 $text['faq_title_15'] = "O que acontece se eu digitar o endereço errado na hora da transferência?";
 $text['faq_descr_15'] = "Como são irreversíveis, transações com criptomoedas não podem ser canceladas nem revertidas depois de iniciadas. Se enviar dinheiro à pessoa errada, talvez você precise entrar em contato com ela para solicitar um reembolso. Caso não saiba a quem pertence o endereço, você não poderá fazer nada para recuperar seu dinheiro.";
 
-$text['faq_title_16'] = "How is the distribution made?;";
+$text['faq_title_16'] = "How is the distribution made?";
 $text['faq_descr_16'] = "<p>The distribution is dinamically made accordingly with the goals table</p>";
 $text['faq_mark_16'] = "Goals";
 $text['faq_distr_value'] = "Distributed Value";
