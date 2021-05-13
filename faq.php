@@ -247,32 +247,32 @@ if(isset($_GET['lang'])){
             <th><?=$text['faq_distr_value']?></th>
         </tr>
         <tr>
-            <td>> 100.000.000 (milhões)</td>
+            <td>> 100.000.000 (<?=$text['millions']?>)</td>
             <td>0.00031000 * (10<sup>6</sup>)</td>
         </tr>
 
         <tr>
-            <td>> 1.000.000.000 (bilhão)</td>
+            <td>> 1.000.000.000 (<?=$text['billion']?>)</td>
 		    <td>0.00062000 * (10<sup>6</sup>) </td>
         </tr>
 
         <tr>
-        <td>> 10.000.000.000 (bilhões)</td>
+        <td>> 10.000.000.000 (<?=$text['billions']?>)</td>
             <td>0.00125000 * (10<sup>6</sup>) </td>
         </tr>
 
         <tr>
-        <td>> 100.000.000.000 (bilhões)</td>
+        <td>> 100.000.000.000 (<?=$text['billions']?>)</td>
             <td>0.00250000 * (10<sup>6</sup>) </td>
         </tr>
 
         <tr>
-        <td>> 1.000.000.000.000 (trilhões)</td>
+        <td>> 1.000.000.000.000 (<?=$text['trillion']?>)</td>
             <td>0.00500000 * (10<sup>6</sup>) </td>
         </tr>
 
       <tr>
-      <td>> 2.000.000.000.000 (trilhões)</td>
+      <td>> 2.000.000.000.000 (<?=$text['trillions']?>)</td>
             <td>0.01000000 * (10<sup>6</sup>) </td>
       </tr>
 

@@ -8,7 +8,7 @@ if ($sandbox) {
 	$usuario = getenv("DB_USUARIO");
 	$senha = getenv("DB_SENHA");
 } else {
-	$host = getenv("DB_HOST");
+	$host = getenv("DB_HOST_LOCAL");
 	$database = getenv("DB_DATABASE");
 	$usuario = getenv("DB_USUARIO");
 	$senha = getenv("DB_SENHA");

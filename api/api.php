@@ -3,12 +3,12 @@
 
 function getTable(){
 
-    //echo getSaldoDisponivel(true);
-
+  require 'languages/en.php';
 
     //100 milhões em saldo
     if (getSaldoDisponivel(true) >= '100.000.000') {
-        return json_decode('{"value_paid": 31000, "unidade": "mi"}');
+        return json_decode('
+        {"value_paid": 31000, "unidade": "mi"}'); //mi
     } else
 
         //1 bilhão em Saldo
@@ -116,8 +116,9 @@ function paidValueToUser($balance_user, $wallet)
     }
 }
 
-function getFee($formated)
-{
+function getFee($formated){
+
+
     try {
         $curl = curl_init();
 
