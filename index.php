@@ -143,7 +143,6 @@ function redirectionTo($path){
         <h1 class="display-5 fw-bold"><?= $text['title'] ?></h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4"><?= $text['description1'] ?> <b><br><?= $text['description2'] ?> <?php echo number_format(getTable()->value_paid, 0, ',', '.');  ?> <?= $text['description3'] ?></b><br> <br><?= $text['warning1'] ?> <?= "<b>" . getMinimumWithdraw(getFee(false, $user_exchange), true) ?> <?= $text['warning2'] ?> <?= "<b>" . getFee(true, $user_exchange) ?> <?= $text['warning3'] ?> </p>
-            <small class="text-muted"><?= $text['warning4'] ?></small>
             <form method="POST" autocomplete="on">
                 <div class="input-group mb-3 mt-3">
                     <span class="input-group-text" id="basic-addon1"><i class="fas fa-wallet"></i></span>
@@ -152,6 +151,17 @@ function redirectionTo($path){
                                                                     } else {
                                                                         echo "";
                                                                     } ?>" id="wallet" name="wallet" required placeholder="<?= $text['you_wallet_here'] ?>" aria-label="wallter" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="alert alert-primary" role="alert">
+                  <div class="text-center">
+                    <?=$text['warning4']?>
+                  </div>
+                  <div class="alert alert-danger mt-2" role="alert">
+                    <div class="text-center">
+                      <?=$text['warning5']?>
+                    </div>
+                  </div>
                 </div>
 
                 <div id="timer-div" class="d-flex justify-content-center d-none" hidden>

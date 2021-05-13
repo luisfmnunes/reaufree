@@ -154,8 +154,7 @@ function getFee($formated, $exchange = "NOPE"){
   }
 }
 
-function getMinimumWithdraw($fee, $formated)
-{
+function getMinimumWithdraw($fee, $formated){
     if ($formated) {
         return number_format(($fee + 1000000), 0, ',', '.');
     } else {
@@ -163,8 +162,7 @@ function getMinimumWithdraw($fee, $formated)
     }
 }
 
-function getSaldoUser($wallet, $formated)
-{
+function getSaldoUser($wallet, $formated){
     include 'conexao/conexao.php';
 
     if ($wallet != null) {
@@ -196,8 +194,7 @@ function getSaldoUser($wallet, $formated)
     return 0;
 }
 
-function getSaldoLiquidoMasterWallet($formated)
-{
+function getSaldoLiquidoMasterWallet($formated){
 
     include 'conexao/conexao.php';
 
@@ -227,8 +224,7 @@ function getSaldoLiquidoMasterWallet($formated)
     return 0;
 };
 
-function getSaldoDisponivel($formated)
-{
+function getSaldoDisponivel($formated){
     if ($formated) {
         $saldoDisponivel = getSaldo(false) - getSaldoLiquidoMasterWallet(false);
         return number_format($saldoDisponivel, 0, ',', '.');
@@ -238,13 +234,11 @@ function getSaldoDisponivel($formated)
     }
 }
 
-function formatValue($value)
-{
+function formatValue($value){
     return number_format($value, 0, ',', '.');
 }
 
-function getTimeLastPay($wallet)
-{
+function getTimeLastPay($wallet){
 
     date_default_timezone_set('America/Fortaleza');
     $today = date("Y-m-d H:i:s");
