@@ -1,31 +1,7 @@
 <?php
 
-function getAlerts($code)
-{
-    if (isset($_GET['k'])) {
-        if ($_GET['k'] == '58') {
-            echo "<div class=\"alert alert-success d-flex justify-content-center\" role=\"alert\">
-        Seus \$REAUS foram depositados com sucesso!
-        </div>";
-            echo '<script>
-      setTimeout(() => {
-        window.location.href = "./";
-      }, 3000);
-      </script>';
-        } else if ($_GET['k'] == '95') {
-            echo "<div class=\"alert alert-danger d-flex justify-content-center\" role=\"alert\">
-        Se ferroUUUUUUUUUUUUUUUUUUUUUUUUU!
-        </div>";
-        } else {
-            echo "<div class=\"alert alert-danger d-flex justify-content-center\" role=\"alert\">
-        Ocorreu um erro ao enviar seus \$REAUS!
-        </div>";
-        }
-    }
-}
 
-function getTable()
-{
+function getTable(){
 
     //echo getSaldoDisponivel(true);
 

@@ -115,7 +115,6 @@ $text['faq_distr_value'] = "Valor Distribuido";
 $text['faq_title_17'] = "Como é feita a distribuição dos lucros?";
 $text['faq_descr_17'] = "<p>Os lucros são distribuídos assim <b>20% (para os desenvolvedores), 20% (para caridade sendo 10% para a hora da ração outros 10% para uma ONG de nossa escolha), 60% (compra de novos tokens).</p></b>";
 
-
 //Marks
 $text['milion'] = "Milhão";
 $text['millions'] = "Milhões";
@@ -125,10 +124,12 @@ $text['trillion'] = "Trilhão";
 $text['trillions'] = "Trilhões";
 $text['quadrillion'] = "Quatrilhão";
 $text['quadrillions'] = "Quatrilhões";
-$text['acronym_million'] = "mi"; //sigla de milhão
-$text['acronym_billion'] = "bi"; //sigla de bilhão
-$text['acronym_trillion'] = "tri"; //sigla de trilhão
-$text['acronym_quadrillion'] = "quatr"; //sigla de quatrilhão
+
+//Acronym of marks
+$text['acronym_million'] = "mi";
+$text['acronym_billion'] = "bi";
+$text['acronym_trillion'] = "tri";
+$text['acronym_quadrillion'] = "quatr";
 
 //Alert Message
 $text['success_withdraw'] = "Seus \$REAUS foram depositados com sucesso!";
