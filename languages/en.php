@@ -9,9 +9,9 @@ $text['description3'] = "\$REAUS</b> every 15 minutes.";
 $text['warning1'] = "⚠️ Minimun <b>Withdraw</b>: ";
 $text['warning2'] = " \$REAU</b> | <b>Fee Value:</b> ";
 $text['warning3'] = "\$REAU⚠️";
-$text['warning4'] = "Para carteiras da <a href=\"https://cutt.ly/tbF50Xk\">Brasil Bitcoin</a> não há taxa e o valor para saque mínimo é de 1.000.000 de \$REAU.";
-$text['warning5'] = "⚠️ A taxa para carteiras externas é cobrada pela corretora para que a transação seja concluída.⚠️";
-$text['you_wallet_here'] = "Paster your REAU Wallet here...";
+$text['warning4'] = "For Wallets of <a href=\"https://cutt.ly/tbF50Xk\">Brasil Bitcoin</a> there are no fees and the minimum \$REAU withdraw value is 1.000.000.";
+$text['warning5'] = "⚠️ The fee for external wallets is charged by the exchange in order to conclude the transaction.⚠️";
+$text['you_wallet_here'] = "Paste your REAU Wallet here...";
 $text['receive_my_reau'] = "Receive my \$REAU!";
 $text['my_balance'] = "My Balance: ";
 $text['withdraw'] = "Withdraw my \$REAU!";
@@ -37,75 +37,75 @@ $text['faq_title_2'] = "What is a Blockchain?";
 $text['faq_descr_2'] = "<p>The Blockchain technology is nothing more then an accounting book that registers the transaction of cryptocurrecies, guaranteeing this register is trustable and immutable.</p>
 <p>The blockchain registers information like: the amount of <b>\$REAU</b> (or other crypto) transacted, who sent it, who receveid it, when this transaction was fullfiled and in where in the accounting book it is registered.</p>";
 
-$text['faq_title_3'] = "O que é a Vira-lata Finance?";
-$text['faq_descr_3'] = "<p>O token do vira-lata caramelo foi desenvolvido em protocolo de finança descentralizada (DeFi), com objetivo de ajudar em causas sociais. O \$REAU não é controlado por nenhuma pessoa ou empresa pois se trata de uma tecnologia decentralizada baseada em blockchain e DeFi.</p>";
+$text['faq_title_3'] = "What is the Vira-lata Finance?";
+$text['faq_descr_3'] = "<p>The token of the caramel vira-lata (mutt) was developed in a descentralized finance (DeFi) protocol with goals of aiding social causes. The \$REAU isn't controlled by any person or institution since it's composed of a descentralized technology based on blockchain and DeFi.</p>";
 
-$text['faq_title_4'] = "Qual o projeto por trás do REAU?";
-$text['faq_descr_4'] = "<p>O \$REAU é uma criptomoeda brasileira criada em 21 de março de 2021 que funciona como um experimento financeiro descentralizado. O mecanismo da moeda trabalha dentro da blockchain – uma rede de dados criptografados que permite a realização de operações, transações e desenvolvimento de contratos inteligentes sem a necessidade de terceiros. A cada transação existe uma taxa que é enviada para a piscina de liquidez na exchange descentralizada PancakeSwap e também uma taxa enviada aos holders da moeda, ou seja: você ganha \$REAU ao segurar o token em sua carteira (um tipo de auto staking). As taxas, aliadas ao envio automático de moedas ao buraco-negro da blockchain, configuram um mecanismo deflacionário, líquido e autossustentável conforme as transações são realizadas. Além de fornecer uma alternativa ao sistema financeiro centralizado, o projeto traz como pautas a propagação de educação sobre DeFi ao público leigo, o auxílio à ações sociais e a geração de um ecossistema que garanta operações financeiras e atividades bancárias peer-to-peer (através de contratos inteligentes) com uma perspectiva de bem-estar social.<p>";
+$text['faq_title_4'] = "What is the REAU project?";
+$text['faq_descr_4'] = "<p>\$REAU is a brazilian cryptocurrency founded in March 21st of 2021 functioning as a decentralized financial experiment. The cryptocurrency mechanism works within the blockchain – A network of encrypted data that allows the fulfillment of operation, transaction and development of smart contracts without the need of a third parties. Each transaction requires a fee that is distributed to the liquidity pool of the decentralized exchange PancakeSwap and the holders of the Token, which means you gain \$REAU in your wallet by keeping tokens on your wallet (a kind of auto staking). The fees (aligned with the automatic share of tokens in a black hole of the blockchain, configure a deflacionary mechanism, self sustainable as transactions are carried out. Beyond providing an alternative to the centralized financial system (CeFi), the project brings as guidelines the propagation of the concept of DeFi and financial knowledge to the lay community. The aid of social actions and the generation of an ecosystem which grant financial operations and bancary activities peer-to-peer (through smart contracts) with a perspective of social welfare.<p>";
 
-$text['faq_title_5'] = "O que é Hold (Hodl)?";
-$text['faq_descr_5'] = "<p>HODL no mundo das criptomoedas, é o mesmo que HOLD. Buy and Hold é uma estratégia de investimento de longo prazo. “Buy” significa “Comprar”. “Hold” significa “Manter”.</p>
-<p>Diferente das outras estratégias, Buy and Hold se caracteriza por comprar uma criptomoeda e manter em sua carteira, independente dos preços e das atuais condições do mercado. O final de um Trading na estratégia Buy and Hold pode levar anos, pois o que leva o Trader a criar uma posição compradora é, normalmente, acreditar que está investindo em um bom projeto a longo prazo, com alto potencial de valorização no futuro.</p>
-<p>Para analisar a criptomoeda nesta estratégia, o Trader olhará para aspectos fundamentalistas, como a segurança da rede, a usabilidade no dia a dia das pessoas, a quantidade de moedas existentes, como se dá o funcionamento das transações através da rede Blockchain e etc. Buy and Hold normalmente é aplicado visando a construção de patrimônio.</p>";
+$text['faq_title_5'] = "What is Hold (Hodl)?";
+$text['faq_descr_5'] = "<p>HODL in the cryptocurrency vocabulary is the same as HOLD (as keeping something). Buy and Hold is a long term investiment strategy.</p>
+<p>Different from other strategies, Buy and Hold is represented by the attainment of a cryptocurrecy and holding these tokens in your wallet, independently of the prices and the current market conditions. The execution of a Trade in the Buy and Hold strategy may take years, since the buying position is usualy encouraged by the belief of investing in a good project in long term, with a high appreciation potential in the future.</p>
+<p>To analyze the cryptocurrency in this strategy, The Trade inspects fundamentalist aspects, such as the safety of the network, the usability in people's daily lives, The amount of existent tokens, the technologies and operation of transactions through the BlockChain network, etc. Buy and Hold is normally applied aiming the a composition of patrimony.</p>";
 
-$text['faq_title_6'] = "Como eu compro a REAU?";
-$text['faq_descr_6'] = "<p>Atualmente é possível comprar REAU na Pancake Swap e <a href=\"https://cutt.ly/tbF50Xk\" target=\"_blank\">Brasil Bitcoin</a>.<p>
-<p>Assista aos vídeos tutoriais de como comprar na Pancake Swap:<p>
-<p>Comprando pelo computador:<br>
+$text['faq_title_6'] = "How do I buy REAU?";
+$text['faq_descr_6'] = "<p>Currently it's possible to buy REAU in the PancakeSwap and <a href=\"https://cutt.ly/tbF50Xk\" target=\"_blank\">Brasil Bitcoin</a>.<p>
+<p>Watch the videos of how to buy on Pancake Swap:<p>
+<p>Buying on Computer:<br>
 <a href=\"https://www.youtube.com/watch?v=lVeoQX7BmEs\" target=\"_blank\">
 https://www.youtube.com/watch?v=lVeoQX7BmEs</p></a>
 
-<p>Comprando pelo Celular Android:<br>
+<p>Buying on Android Phone:<br>
 <a href=\"https://www.youtube.com/watch?v=0lKjS5dkloo\" target=\"_blank\">
 https://www.youtube.com/watch?v=0lKjS5dkloo</p></a>
 
-<p>Comprando pelo Celular iPhone:<br>
+<p>Buying on iPhone:<br>
 <a href=\"https://www.youtube.com/watch?v=-AqykeY7ftw\" target=\"_blank\">
 https://www.youtube.com/watch?v=-AqykeY7ftw</p></a>
 
-<p>PDF explicando como comprar na Pancake Swap:<br>
+<p>PDF explaining how to buy on Pancake Swap:<br>
 <a href=\"https://drive.google.com/file/d/1-x5kasT_E6zkpUYcy-4OVe9IPvu-h6xg\" target=\"_blank\">
 https://drive.google.com/file/d/1-x5kasT_E6zkpUYcy-4OVe9IPvu-h6xg</p></a>
 
-<p>Grupo de Ajuda no Telegram:<br>
+<p>Telegram Help Group:<br>
 <a href=\"https://t.me/viralatahelp\" target=\"_blank\">
 https://t.me/viralatahelp</p></a>
 
-<p>Tanto o PDF quanto os vídeos acima são de criação dos membros do projeto Vira-lata Finance e também podem ser encontrados na página de link oficial do projeto:<br>
+<p>Both the PDF and the videos above are made by members of the Vira-lata Finance project and may also be found in the official page of the project:<br>
 <a href=\"https://linktr.ee/viralatafinance\" target=\"_blank\">
 https://linktr.ee/viralatafinance</p></a>";
 
-$text['faq_title_7'] = "O que são sardinhas e baleias?";
-$text['faq_descr_7'] = "Chamamos de <b>baleia</b> todos aqueles que detêm grandes quantidades de Reau e <b>sardinha</b> são os pequenos investidores.";
+$text['faq_title_7'] = "What are sardines and Whales?";
+$text['faq_descr_7'] = "We call <b>Wahle</b> all those that own great quantities of REAU and <b>sardines</b> are those with small investments.";
 
-$text['faq_title_8'] = "O que é DeFi?";
-$text['faq_descr_8'] = "DeFi é uma sigla para a palavra Decentralized Finance e significa finanças descentralizadas. Ela parte da ideia de construir instrumentos financeiros no blockchain, de forma descentralizada e independente de empresas e governos.";
+$text['faq_title_8'] = "What is DeFi?";
+$text['faq_descr_8'] = "DeFi are the initials of the word Decentralized Finance. The main idea consist of building decentralized financial instruments in the blockchain, independent of companies and governments.";
 
-$text['faq_title_9'] = "Porque meu dinheiro fica aumentando sozinho na carteira digital?";
-$text['faq_descr_9'] = "Toda vez que uma transação ocorre, 1% desse valor é distribuido para todos os que já possuem REAUs na carteira, proporcional a quantidade que possuem. Contudo esse \"bonus\" vai diminuindo conforme vai aumentando o número de holders pois esses 1% serão distribuídos para todos. (holders são as pessoas que possuem a moeda na carteira).";
+$text['faq_title_9'] = "Why my wallet balance keep increasing alone?";
+$text['faq_descr_9'] = "Every time a transaction is made, 1% of this value is distributed for all those that already have REAUs in the wallet, proportional to the amount they withhold. Yet this \"bonus\" progressly decay according to the number of holders since the 1% is distributed between all holders (remembering that holders are those that retain the tokens).";
 
-$text['faq_title_10'] = "O que é Trade?";
-$text['faq_descr_10'] = "Trade, ou trading, é o nome dado à operação de compra e venda de ativos no curto prazo. Quem faz trade aproveita a oscilação de preços e a volatilidade para ganhar com a especulação.";
+$text['faq_title_10'] = "What is Trade?";
+$text['faq_descr_10'] = "Trade, or trading, is the name given to the buying and selling operations in short term. The trader take advantage of the price oscillation and volatility to profit with speculation.";
 
-$text['faq_title_11'] = "O que é Exchange?";
-$text['faq_descr_11'] = "Uma exchange é uma corretora de criptoativos. Ela funciona como uma plataforma eletrônica que facilita a compra, a venda e a troca de moedas digitais e tokens.
+$text['faq_title_11'] = "What is an Exchange?";
+$text['faq_descr_11'] = "An Exchange is a crypto broker. It works as an electronic plataform to facilitate the buying, selling and swapping of tokens.
 
-Essas empresas trabalham conectando compradores e vendedores, assegurando uma transação prática e segura.
+These companies connect buyers and sellers assuring safe and practical transactions.
 
-Existem algumas exchanges que apenas negociam Bitcoins e outras que contam com uma gama variada de criptomoedas.";
+Some exchanges only allow transactions with Bitcoin (BTC) while others present a higher variability of cryptocurrencies for operations.";
 
-$text['faq_title_12'] = "O que é renda variável?";
-$text['faq_descr_12'] = "Renda variável é um tipo de investimento no qual não é possível definir o quanto seu dinheiro vai render em determinado período. Por esse motivo, costumam ser aplicações de maior risco, mas, por outro lado, o rendimento pode ser muito maior e em um espaço de tempo mais curto.";
+$text['faq_title_12'] = "What is variable income?";
+$text['faq_descr_12'] = "Variable income is a type of investment in which it's not possible to determine the profit of an investment in determined time interval. These applications present a higher risk, since it may result in loss. However, the profit in short term can be much greater than fixed income";
 
-$text['faq_title_13'] = "Como saber o valor do \$REAU agora?";
-$text['faq_descr_13'] = "Você pode acompanhar o valor pelo próprio vilaratômetro. <a href=\"https://viralatometro.com/#/#simulador\">Clique aqui para visualizar</a>";
+$text['faq_title_13'] = "How to check the current \$REAU price?";
+$text['faq_descr_13'] = "The value can be checked in the 'vilaratômetro'. <a href=\"https://viralatometro.com/#/#simulador\">Click here to visualize</a>";
 
-$text['faq_title_14'] = "O que é o endereço da carteira?";
-$text['faq_descr_14'] = "Um endereço, no mundo das criptomonedas, é o local ao qual uma certa quantidade de criptomoedas está associada. Toda pessoa ou usuário que deseja enviar ou receber criptomoedas irá sempre necessitar de um endereço.
-O endereço funciona exatamente como no sistema financeiro tradicional, para receber ou enviar transferências de dinheiro. O que significa que um tipo de conta bancária funciona. Em criptomoedas, que são conhecidas como \"endereço\" o \"Endereço da carteira\". O objetivo dos endereços é nos permitir receber e enviar criptomoedas.";
+$text['faq_title_14'] = "What is the wallet address?";
+$text['faq_descr_14'] = "The address (in cryptocurrency vocabulary) is a sequence of characters which a certain amount of a token is associated to. Every person or user that desires to send or receive cryptocurrencies will require a wallet address.
+The address works exactly as the tradicional financial system to receive or send money, which in this analogy the wallet address is similar to the bank account number."
 
-$text['faq_title_15'] = "O que acontece se eu digitar o endereço errado na hora da transferência?";
-$text['faq_descr_15'] = "Como são irreversíveis, transações com criptomoedas não podem ser canceladas nem revertidas depois de iniciadas. Se enviar dinheiro à pessoa errada, talvez você precise entrar em contato com ela para solicitar um reembolso. Caso não saiba a quem pertence o endereço, você não poderá fazer nada para recuperar seu dinheiro.";
+$text['faq_title_15'] = "What happens if I tap the wrong address in the transaction form?";
+$text['faq_descr_15'] = "Since transactions are irreversible, a transaction cannot be canceled or reversed after initiated. If you send cryptocurrency to the wrong wallet, you may need to contact the owner of wallet (in case you know the owner, otherwise there is nothing to be done about it).";
 
 $text['faq_title_16'] = "How is the distribution made?";
 $text['faq_descr_16'] = "<p>The distribution is dinamically made accordingly with the goals table</p>";
@@ -116,14 +116,14 @@ $text['faq_title_17'] = "How is the profit distribution made?";
 $text['faq_descr_17'] = "<p>The profit is dristibutted in the following rate: <b>20% (developers), 20%(for charity, being 10% for 'Hora da Ração' [Ration Time - A Viralata Finance Funding Project for animal cause NGOs] and 10% for an NGO of our choice), 60% (new tokens buying to burn tokens and move economy).</p></b>";
 
 //Marks
-$text['milion'] = "Milhão";
-$text['millions'] = "Milhões";
-$text['billion'] = "Bilhão";
-$text['billions'] = "Bilhões";
-$text['trillion'] = "Trilhão";
-$text['trillions'] = "Trilhões";
-$text['quadrillion'] = "Quatrilhão";
-$text['quadrillions'] = "Quatrilhões";
+$text['milion'] = "Million";
+$text['millions'] = "Millions";
+$text['billion'] = "Billion";
+$text['billions'] = "Billions";
+$text['trillion'] = "Trillion";
+$text['trillions'] = "Trillions";
+$text['quadrillion'] = "Quadrillion";
+$text['quadrillions'] = "Quadrillions";
 
 //Acronym of marks
 $text['acronym_million'] = "mi";
@@ -132,8 +132,8 @@ $text['acronym_trillion'] = "tri";
 $text['acronym_quadrillion'] = "quatr";
 
 //Footer
-$text['footer'] = "Este é um site sem vínculo com o Projeto Oficial do \$REAU - VIRA-LATA FINANCE!";
-$text['official_site'] = "Site Oficial";
+$text['footer'] = "This web site has no link with the Official \$REAU - VIRA-LATA FINANCE project!";
+$text['official_site'] = "Official Web-Site";
 $text['github'] = "Github";
 $text['blog'] = "Blog";
 
